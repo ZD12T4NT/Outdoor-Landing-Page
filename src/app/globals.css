@@ -1,0 +1,73 @@
+/* Import Tailwind's default base, components, and utilities */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Custom Variables */
+:root {
+  /* Fonts */
+  --main: "Figtree", sans-serif;
+}
+
+/* Normalize + Antialias */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: #000;
+}
+
+::selection {
+  color: #fff;
+  background: #000;
+}
+
+/* Font Application */
+body {
+  color: var(--text);
+  height: 100%;
+  position: relative;
+}
+
+/* Scrollbar (WebKit) */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb);
+}
+
+/* Text + Links */
+a,
+p,
+ul li {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--text);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--main);
+  color: var(--primary);
+}
